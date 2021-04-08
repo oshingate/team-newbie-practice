@@ -129,6 +129,15 @@ table {
 }
 
 /* general css */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+:root {
+  --pri: #233b67;
+  --sec: #62e993;
+  --ter: #456fe6;
+}
 .flex {
   display: flex;
 }
@@ -149,21 +158,26 @@ table {
 .glass-temp {
   min-height: 100vh;
 
-  background: linear-gradient(to top right, #65dfc9, #6cdbeb);
+  background: linear-gradient(to top right, #233b67, #233b67);
   position: relative;
 }
 .glass {
   background: white;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.692),
     rgba(255, 255, 255, 0.315)
+  ); */
+  background: linear-gradient(
+    to top left,
+    rgba(128, 128, 128, 0.623),
+    rgba(128, 128, 128, 0.322)
   );
   min-height: 80vh;
   width: 70%;
   border-radius: 2rem;
   z-index: 3;
-  backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(2rem);
   padding: 1rem;
 }
 
@@ -184,6 +198,7 @@ table {
 .circle1 {
   top: 5%;
   right: 10%;
+  background: linear-gradient(to top right, #4570e6, #4570e6);
 }
 .circle2 {
   height: 8rem;
@@ -192,6 +207,7 @@ table {
 .circle3 {
   bottom: 5%;
   left: 10%;
+  background: linear-gradient(to top right, #62e993, #62e993);
 }
 
 .dashboard {
