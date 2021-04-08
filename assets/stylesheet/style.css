@@ -137,6 +137,7 @@ html {
   --pri: #233b67;
   --sec: #62e993;
   --ter: #456fe6;
+  --textHead: #121e35;
 }
 .flex {
   display: flex;
@@ -147,13 +148,45 @@ html {
 .aic {
   align-items: center;
 }
+.text-center {
+  text-align: center;
+}
 .flex-30 {
   flex: 0 1 28%;
 }
 .flex-70 {
   flex: 0 1 68%;
 }
+.displayNone {
+  display: none;
+}
+.invalid {
+  border: 3px solid rgb(231, 101, 101);
+}
+.valid {
+  border: none;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--textHead);
+}
 /* custome css */
+
+/* this is base template  */
 
 .glass-temp {
   min-height: 100vh;
@@ -217,4 +250,44 @@ html {
     rgba(255, 255, 255, 0.3)
   );
   border-radius: 2rem;
+}
+
+/* this is css for login page */
+.signup-page {
+  width: 70%;
+  margin: 0 auto;
+}
+.toggleLogin {
+  color: #16552d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.signup-form > *,
+.login-form > * {
+  margin: 0.7rem 0;
+}
+input {
+  border: none;
+}
+.signup-form input,
+.login-form input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.553);
+
+  outline: none;
+  padding: 0.3rem 0;
+  border-radius: 7px;
+}
+.signup-form input::placeholder,
+.login-form input::placeholder {
+  color: var(--textHead);
+  padding-left: 1rem;
+}
+.signup-sex-box input {
+  width: auto;
+}
+.signup-form span {
+  color: rgb(167, 4, 4);
 }
