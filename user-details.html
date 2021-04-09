@@ -30,7 +30,7 @@
                   <ul class="main-menu">
                     <li class="sub-menu"><a href="#personal-details" class="capitalize">Personal details</a></li>
                     <li class="sub-menu"><a href="#" class="capitalize">Info about vaccines</a></li>
-                    <li class="sub-menu"><a href="#" class="capitalize">Vaccination data</a></li>
+                    <li class="sub-menu"><a href="#" class="capitalize">Common Symptoms</a></li>
                     <li class="sub-menu"><a href="#" class="capitalize">Book next dose</a></li>
                     <a href="#" class="button btn-primary upper">Get your certificate</a>
                   </ul>
@@ -41,37 +41,41 @@
             <div class="glass-main flex-70">
               <h2>Personal Details</h2>
           <form action="#" class="user-form">
-            <fieldset>
-              <div>
-                    <label for="name" class="form-label">Enter your Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*" required> 
-                    <label for="email" class="form-label">Enter your Email</label>
-                    <input type="email" name="email" id="email" class="form-control flex-47" placeholder="Your Email*" required> 
-  
-                    <label for="password" class="form-label">Enter your Password</label>
-                    <input type="password" name="password" id="password" class="form-control flex-47" placeholder="Your Password*" required> 
-        
-              <div class="flex justify-between">
-                  <div class="flex-50">
-                    <label for="vaccine" class="form-label">Which vaccine have you taken?</label>
-                    <select name="vaccine" class="form-control vaccine-type" required id="vaccine">
-                      <option value=""></option>
-                      <option value="vaccine-1">Covisheild</option>
-                      <option value="vaccine-2">Covaxin</option>
-                    </select>
-                </div>
+            
+              <fieldset>
+                <label for="name" class="form-label">Enter your Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*" required> 
+              </fieldset>
+              
+              <fieldset>
+                <label for="email" class="form-label">Enter your Email</label>
+                <input type="email" name="email" id="email" class="form-control flex-47" placeholder="Your Email*" required> 
+              </fieldset>
+
+              <fieldset>
+                <label for="vaccine" class="form-label">Which vaccine have you taken?</label>
+                <select name="vaccine" class="form-control vaccine-type" required id="vaccine">
+                  <option value="" disabled selected>Choose a vaccine</option>
+                  <option value="vaccine-1">Covisheild</option>
+                  <option value="vaccine-2">Covaxin</option>
+                </select>
+              </fieldset>
     
-                <div class="flex-40">
-                  <label for="date" class="form-label">Enter first dose date</label>
-                  <input type="date" name="date" id="date" class="form-control" required> 
-                </div>
-              </div>
-                  <label for="aadhar" class="form-label">Enter your Aadhar Number</label>
-                  <input type="text" name="aadhar" id="aadhar" class="form-control" placeholder="Your Aadhar Number*" required> 
+              <fieldset>
+                <label for="aadhar" class="form-label">Enter your Aadhar Number</label>
+                <input type="text" name="aadhar" id="aadhar" class="form-control" placeholder="Your Aadhar Number*" required> 
+              </fieldset>
+      
+              <fieldset>
                 <label for="tel" class="form-label">Enter your Mobile Number</label>
                 <input type="tel" name="tel" id="tel" class="form-control" placeholder="Your Mobile Number*" required> 
-            <input type="submit" class="button btn-secondary upper"></input>
-            </fieldset>
+              </fieldset>
+      
+               <fieldset>
+                <input type="submit" class="button btn-secondary upper"></input>
+               </fieldset>   
+             
+            
           </form>
             </div>
           </div>
