@@ -181,7 +181,7 @@ a {
   font-size: 0;
 }
 
-.btn {
+.button {
   color: var(--text-white);
   font-weight: 600;
   background-color: var(--btn-bg);
@@ -263,7 +263,8 @@ a {
 
 /* custome css */
 
-/* Custom template styles *
+/* Custom template styles  */
+
 .displayNone {
   display: none;
 }
