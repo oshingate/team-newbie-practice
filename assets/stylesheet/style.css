@@ -182,7 +182,7 @@ a {
 }
 
 .btn {
-  color: #fff;
+  color: var(--text-white);
   font-weight: 600;
   background-color: var(--btn-bg);
   border-radius: .5rem;
