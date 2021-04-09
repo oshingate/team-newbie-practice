@@ -477,6 +477,7 @@ a{
 
 .dashboard {
   padding: 1rem;
+  min-height: 110vh;
 }
 .user-img {
   margin-bottom: 1.2rem;
