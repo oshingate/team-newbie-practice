@@ -188,6 +188,41 @@ h2 {
   font-weight: 800;
   color: var(--textHead);
 }
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.jca{
+  justify-content: space-around;
+}
+.jcb{
+  justify-content: space-between;
+}
+.tac{
+  text-align: center;
+}
+.flex-50{
+  flex: 0 1 50%;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+a{
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(99, 99, 105);
+  border-radius: 10px;
+} 
+::-webkit-scrollbar-thumb {
+  background: var(--pri); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 187, 187); 
+}
+
 /* custome css */
 
 /* this is base template  */
@@ -258,39 +293,21 @@ h2 {
 
 /* Landing Page Styles */
 
-.flex-col{
-  display: flex;
-  flex-direction: column;
+/* Media */
+@media all and (max-width: 768px){
+  html{
+    font-size: 10px;
+  }
+  .media-flex-100{
+    flex: 0 1 100%;
+  }
 }
-.jca{
-  justify-content: space-around;
-}
-.jcb{
-  justify-content: space-between;
-}
-.tac{
-  text-align: center;
-}
-a{
-  text-decoration: none;
-}
-::-webkit-scrollbar {
-  width: 10px;
-  background: rgb(105, 99, 99);
-} 
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(194, 187, 187); 
-}
-
 /* Glass Main Section */
 .glass-main{
   margin: 0 2rem;
 }
 /* Header */
-.header{
+.header-landing{
   padding: 1.6rem 1rem;
   border-radius: 2rem;
   background: linear-gradient(
@@ -334,9 +351,9 @@ a{
   margin-top: 2rem;
 }
 .dashboard-headings {
-  margin: 4rem 1rem 0 1rem;
+  margin: 3rem 1rem 0 1rem;
   text-transform: capitalize;
-  color: var(--text);
+  color: var(--pri);
   padding: 0.8rem 1.2rem;
   background: linear-gradient(
     to top left,
@@ -383,7 +400,7 @@ a{
   margin: 0 auto;
 }
 .toggleLogin {
-  color: #16552d;
+  color: var(--pri);
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: underline;
@@ -391,7 +408,7 @@ a{
 
 .signup-form > *,
 .login-form > * {
-  margin: 0.7rem 0;
+  margin: 1.5rem 0;
 }
 input {
   border: none;
@@ -402,7 +419,7 @@ input {
   background-color: rgba(255, 255, 255, 0.553);
 
   outline: none;
-  padding: 0.3rem 0;
+  padding: 1rem 0;
   border-radius: 7px;
 }
 .signup-form input::placeholder,
