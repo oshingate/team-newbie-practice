@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -134,7 +132,9 @@ table {
 
 /* general css */
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 html {
@@ -161,7 +161,7 @@ a {
 }
 .padding {
   padding: 3rem 0;
-} 
+}
 
 .capitalize {
   text-transform: capitalize;
@@ -185,7 +185,7 @@ a {
   color: var(--text-white);
   font-weight: 600;
   background-color: var(--btn-bg);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   --textHead: #121e35;
 
@@ -193,28 +193,26 @@ a {
 }
 
 .btn:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 .btn-primary {
   margin: 1rem 0;
   padding: 1rem 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: block;
 }
 
 .btn-secondary {
   display: inline-block;
-  padding: .75rem 2rem;
+  padding: 0.75rem 2rem;
   outline: 0;
   border: 0;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   margin: 1rem 0;
   cursor: pointer;
 }
 
-
 /* Flex */
-
 
 .flex {
   display: flex;
@@ -254,17 +252,15 @@ a {
   flex: 0 1 65%;
 }
 
-.flex-47{
+.flex-47 {
   flex: 0 1 47%;
 }
 .flex-60 {
-  flex: 0 1 60%
-}
-
+  flex: 0 1 60%;
 /* custome css */
 
 /* Custom template styles  */
-
+  
 .displayNone {
   display: none;
 }
@@ -292,15 +288,12 @@ h2 {
   font-weight: 800;
   color: var(--textHead);
 }
-/* custome css */
-
-/* this is base template  */
 
 .glass-temp {
   min-height: 100vh;
   background: linear-gradient(to top right, #233b67, #233b67);
   position: relative;
-   padding: 4rem 0; 
+  padding: 4rem 0;
 }
 .glass {
   background: white;
@@ -363,39 +356,39 @@ h2 {
 
 /* Landing Page Styles */
 
-.flex-col{
+.flex-col {
   display: flex;
   flex-direction: column;
 }
-.jca{
+.jca {
   justify-content: space-around;
 }
-.jcb{
+.jcb {
   justify-content: space-between;
 }
-.tac{
+.tac {
   text-align: center;
 }
-a{
+a {
   text-decoration: none;
 }
 ::-webkit-scrollbar {
   width: 10px;
   background: rgb(105, 99, 99);
-} 
+}
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(194, 187, 187); 
+  background: rgb(194, 187, 187);
 }
 
 /* Glass Main Section */
-.glass-main{
+.glass-main {
   margin: 0 2rem;
 }
 /* Header */
-.header{
+.header {
   padding: 1.6rem 1rem;
   border-radius: 2rem;
   background: linear-gradient(
@@ -404,15 +397,15 @@ a{
     rgba(128, 128, 128, 0.222)
   );
 }
-.header-heading{
+.header-heading {
   font-size: 3rem;
   font-weight: 600;
   color: #1b73e8;
 }
-.header-heading span{
+.header-heading span {
   color: rgb(117, 0, 0);
 }
-.nav-links li a{
+.nav-links li a {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--text);
@@ -422,7 +415,7 @@ a{
   font-weight: 600;
   border-radius: 1.4rem;
 }
-.nav-links li a:hover{
+.nav-links li a:hover {
   color: var(--pri);
   background: linear-gradient(
     to top left,
@@ -432,10 +425,10 @@ a{
   border: 1px solid var(--pri);
 }
 /* Glass temp dashboard */
-.dashboard-headings{
+.dashboard-headings {
   font-size: 1.4rem;
 }
-.logo-wrapper{
+.logo-wrapper {
   margin-top: 2rem;
 }
 .dashboard-headings {
@@ -452,17 +445,17 @@ a{
   font-weight: 600;
   border-radius: 1.4rem;
 }
-.dashboard-headings:hover{
+.dashboard-headings:hover {
   color: var(--pri);
   background: linear-gradient(
     to top left,
     rgba(253, 250, 250, 0.623),
     rgba(114, 116, 202, 0.322)
   );
-  border: 1px solid var(--pri);  
+  border: 1px solid var(--pri);
 }
 /* Glass Body section */
-.glass-body{
+.glass-body {
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 2rem;
@@ -497,24 +490,23 @@ a{
 .dashboard h3 {
   font-weight: 500;
 }
-.main-menu  .sub-menu{
+.main-menu .sub-menu {
   margin: 1.5rem 0;
   padding: 1rem 0;
-  border-radius: .5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 .sub-menu:hover {
-  box-shadow:  0 0 8px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 .sub-menu a {
   color: var(--text-white);
 }
 
 /* Glass-main */
-
 
 /* .glass-main {
   max-height: 100vh;
@@ -525,7 +517,6 @@ a{
   font-weight: 600;
   padding-left: 1.3rem;
   margin: 1rem 0;
-
 }
 
 .user-form {
@@ -534,17 +525,17 @@ a{
 
 .form-label {
   font-size: 1.1rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   font-weight: 500;
 }
 .form-control {
   width: 100%;
   display: block;
-  padding: .75rem .75rem;
+  padding: 0.75rem 0.75rem;
   outline: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid #aaa5a5;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   box-shadow: none;
   font-size: 1rem;
   background-color: none;
@@ -568,13 +559,12 @@ a{
 input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: var(--text-white);
 }
-.article-heading{
+.article-heading {
   font-size: 2rem;
   font-weight: 600;
   color: var(--text);
   padding: 1.6rem 0;
 }
-
 
 /* this is css for login page */
 .signup-page {
@@ -616,10 +606,9 @@ input {
   color: rgb(167, 4, 4);
 }
 
-.article-para{
+.article-para {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
   color: var(--text);
 }
-
