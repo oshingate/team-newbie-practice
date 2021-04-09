@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+  </head>
+  <body>
+    <main>
+
+      <section>
+        <div class="glass-temp flex jcc aic">
+          <div class="glass flex">
+    
+            <div class="dashboard flex-30 text-center">
+              <div class="user-img font-0 text-center">
+                <img src="/assets/images/sample-user-image.jpg" alt="user-img-01">
+              </div>
+                <h1 class="user-name">Gurpreet Singh</h1>
+                <h3>Ludhiana</h3>
+                <h3>Punjab</h3>
+                <nav class="navbar">
+                  <ul class="main-menu">
+                    <li class="sub-menu"><a href="#personal-details" class="capitalize">Personal details</a></li>
+                    <li class="sub-menu"><a href="#" class="capitalize">Info about vaccines</a></li>
+                    <li class="sub-menu"><a href="#" class="capitalize">Vaccination data</a></li>
+                    <li class="sub-menu"><a href="#" class="capitalize">Book next dose</a></li>
+                    <a href="#" class="button btn-primary upper">Get your certificate</a>
+                  </ul>
+                </nav>
+            </div>
+    
+            
+            <div class="glass-main flex-70">
+              <h2>Personal Details</h2>
+          <form action="#" class="user-form">
+            <fieldset>
+              <div>
+                    <label for="name" class="form-label">Enter your Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name*" required> 
+                    <label for="email" class="form-label">Enter your Email</label>
+                    <input type="email" name="email" id="email" class="form-control flex-47" placeholder="Your Email*" required> 
+  
+                    <label for="password" class="form-label">Enter your Password</label>
+                    <input type="password" name="password" id="password" class="form-control flex-47" placeholder="Your Password*" required> 
+        
+              <div class="flex justify-between">
+                  <div class="flex-47">
+                    <label for="vaccine" class="form-label">Which vaccine have you taken?</label>
+                    <select name="vaccine" class="form-control vaccine-type" required id="vaccine">
+                      <option value=""></option>
+                      <option value="vaccine-1">Covisheild</option>
+                      <option value="vaccine-2">Covaxin</option>
+                    </select>
+                </div>
+    
+                <div class="flex-47">
+                  <label for="date" class="form-label">Enter first dose date</label>
+                  <input type="date" name="date" id="date" class="form-control" required> 
+                </div>
+              </div>
+                  <label for="aadhar" class="form-label">Enter your Aadhar Number</label>
+                  <input type="text" name="aadhar" id="aadhar" class="form-control" placeholder="Your Aadhar Number*" required> 
+                <label for="tel" class="form-label">Enter your Mobile Number</label>
+                <input type="tel" name="tel" id="tel" class="form-control" placeholder="Your Mobile Number*" required> 
+            <input type="submit" class="button btn-secondary upper"></input>
+            </fieldset>
+          </form>
+            </div>
+          </div>
+    
+          <div class="circle circle1"></div>
+          <div class="circle circle2"></div>
+          <div class="circle circle3"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
