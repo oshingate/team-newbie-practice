@@ -1,4 +1,4 @@
-let persons = [
+{let persons = [
   {
     name: "admin",
     email: "admin@gmail.com",
@@ -23,4 +23,4 @@ let persons = [
     mobile: "5623578945",
     password: "onkar1234",
   },
-];
+];}
