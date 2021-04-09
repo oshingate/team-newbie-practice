@@ -182,7 +182,7 @@ a {
 }
 
 .btn {
-  color: #fff;
+  color: var(--text-white);
   font-weight: 600;
   background-color: var(--btn-bg);
   border-radius: .5rem;
@@ -477,6 +477,7 @@ a{
 
 .dashboard {
   padding: 1rem;
+  min-height: 110vh;
 }
 .user-img {
   margin-bottom: 1.2rem;
