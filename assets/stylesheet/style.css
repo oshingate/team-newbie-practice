@@ -257,10 +257,9 @@ a {
 }
 .flex-60 {
   flex: 0 1 60%;
+}
 /* custome css */
 
-/* Custom template styles  */
-  
 .displayNone {
   display: none;
 }
