@@ -146,12 +146,14 @@ html {
   --pri: #233b67;
   --sec: #62e993;
   --ter: #456fe6;
+  --text-white: #fff;
+  --btn-bg: blue;
 }
 
 body {
   line-height: 1.5;
   font-size: 1rem;
-  color: #fff;
+  color: var(--text-white);
 }
 
 a {
@@ -182,6 +184,8 @@ a {
 .btn {
   color: #fff;
   font-weight: 600;
+  background-color: var(--btn-bg);
+  border-radius: .5rem;
 }
 
 .btn:hover {
@@ -189,7 +193,6 @@ a {
 }
 .btn-primary {
   margin: 1rem 0;
-  background-color: blue;
   padding: 1rem 0;
   border-radius: .5rem;
   display: block;
@@ -199,11 +202,8 @@ a {
   display: inline-block;
   padding: .75rem 2rem;
   outline: 0;
-  border-radius: .5rem;
-  background-color: blue;
   border: 0;
-  font-size: 1.2rem;
-  
+  font-size: 1.2rem; 
   margin: 1rem 0;
   cursor: pointer;
 }
@@ -346,7 +346,7 @@ a {
 .dashboard h3 {
   font-weight: 500;
 }
-.sub-menu  li{
+.main-menu  .sub-menu{
   margin: 1.5rem 0;
   padding: 1rem 0;
   border-radius: .5rem;
@@ -355,11 +355,11 @@ a {
   font-weight: 500;
 }
 
-.sub-menu li:hover {
+.sub-menu:hover {
   box-shadow:  0 0 8px rgba(0, 0, 0, .6);
 }
-.sub-menu li a {
-  color: #fff;
+.sub-menu a {
+  color: var(--text-white);
 }
 
 /* Glass-main */
@@ -404,16 +404,16 @@ a {
 }
 
 .vaccine-type {
-  background-color: #fff;
+  background-color: var(--text-white);
 }
 /* input[type=date]:invalid::-webkit-datetime-edit {
   color: #fff;
 } */
 
-.glass-main::-webkit-scrollbar{
+/* .glass-main::-webkit-scrollbar{
   background-color: darkgray;
-}
+} */
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  background-color: #fff;
+  background-color: var(--text-white);
 }
