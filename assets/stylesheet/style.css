@@ -1,8 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
 
+ */
 html,
 body,
 div,
@@ -129,20 +133,89 @@ table {
 }
 
 /* general css */
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 :root {
   --pri: #233b67;
   --sec: #62e993;
   --ter: #456fe6;
+  --text-white: #fff;
+  --btn-bg: blue;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--text-white);
+}
+
+a {
+  text-decoration: none;
+}
+.padding {
+  padding: 3rem 0;
+} 
+
+.capitalize {
+  text-transform: capitalize;
+}
+.upper {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--btn-bg);
+  border-radius: .5rem;
 
   --textHead: #121e35;
 
   --text: #f0efef;
-
 }
+
+.btn:hover {
+  opacity: .4;
+}
+.btn-primary {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: .5rem;
+  display: block;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: .75rem 2rem;
+  outline: 0;
+  border: 0;
+  font-size: 1.2rem; 
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+
+/* Flex */
+
+
 .flex {
   display: flex;
 }
@@ -161,6 +234,36 @@ html {
 .flex-70 {
   flex: 0 1 68%;
 }
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-65 {
+  flex: 0 1 65%;
+}
+
+.flex-47{
+  flex: 0 1 47%;
+}
+.flex-60 {
+  flex: 0 1 60%
+}
+
+/* custome css */
+
+/* Custom template styles *
 .displayNone {
   display: none;
 }
@@ -196,6 +299,7 @@ h2 {
   min-height: 100vh;
   background: linear-gradient(to top right, #233b67, #233b67);
   position: relative;
+   padding: 4rem 0; 
 }
 .glass {
   background: white;
@@ -368,6 +472,99 @@ a{
   );
   height: 75vh;
   overflow: auto;
+}
+/* Dashboard */
+
+.dashboard {
+  padding: 1rem;
+}
+.user-img {
+  margin-bottom: 1.2rem;
+}
+.user-img img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.dashboard h3 {
+  font-weight: 500;
+}
+.main-menu  .sub-menu{
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sub-menu:hover {
+  box-shadow:  0 0 8px rgba(0, 0, 0, .6);
+}
+.sub-menu a {
+  color: var(--text-white);
+}
+
+/* Glass-main */
+
+
+/* .glass-main {
+  max-height: 100vh;
+  overflow: auto;
+} */
+.glass-main h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-left: 1.3rem;
+  margin: 1rem 0;
+
+}
+
+.user-form {
+  padding: 1.5rem;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  margin: .5rem 0;
+  font-weight: 500;
+}
+.form-control {
+  width: 100%;
+  display: block;
+  padding: .75rem .75rem;
+  outline: 0;
+  border-radius: .5rem;
+  border: 1px solid #aaa5a5;
+  margin: .5rem 0;
+  box-shadow: none;
+  font-size: 1rem;
+  background-color: none;
+}
+
+.form-control:focus {
+  border: 1px solid blue;
+}
+
+.vaccine-type {
+  background-color: var(--text-white);
+}
+/* input[type=date]:invalid::-webkit-datetime-edit {
+  color: #fff;
+} */
+
+/* .glass-main::-webkit-scrollbar{
+  background-color: darkgray;
+} */
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: var(--text-white);
 }
 .article-heading{
   font-size: 2rem;
