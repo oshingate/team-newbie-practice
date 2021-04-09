@@ -262,7 +262,7 @@ a {
   flex: 0 1 60%;
 }
 .flex-50 {
-  flex: 0 1 50%;
+  flex: 0 1 47%;
 }
 .flex-100 {
   flex: 0 1 100%;
@@ -604,6 +604,7 @@ a {
   border: 1px solid blue;
 }
 
+.address > *{margin-right: .5rem;}
 .vaccine-type {
   background-color: var(--text-white);
 }
