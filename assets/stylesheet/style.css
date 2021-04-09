@@ -160,7 +160,7 @@ a {
   text-decoration: none;
 }
 .padding {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .capitalize {
@@ -192,7 +192,7 @@ a {
   --text: #f0efef;
 }
 
-.btn:hover {
+.button:hover {
   opacity: 0.4;
 }
 .btn-primary {
@@ -255,8 +255,14 @@ a {
 .flex-47 {
   flex: 0 1 47%;
 }
+.flex-40 {
+  flex: 0 1 40%;
+}
 .flex-60 {
   flex: 0 1 60%;
+}
+.flex-50 {
+  flex: 0 1 50%;
 }
 /* custome css */
 
@@ -292,7 +298,6 @@ h2 {
   min-height: 100vh;
   background: linear-gradient(to top right, #233b67, #233b67);
   position: relative;
-  padding: 4rem 0;
 }
 .glass {
   background: white;
@@ -423,6 +428,7 @@ a {
   );
   border: 1px solid var(--pri);
 }
+
 /* Glass temp dashboard */
 .dashboard-headings {
   font-size: 1.4rem;
@@ -453,6 +459,7 @@ a {
   );
   border: 1px solid var(--pri);
 }
+
 /* Glass Body section */
 .glass-body {
   padding: 1rem;
@@ -547,14 +554,10 @@ a {
 .vaccine-type {
   background-color: var(--text-white);
 }
-/* input[type=date]:invalid::-webkit-datetime-edit {
-  color: #fff;
-} */
 
-/* .glass-main::-webkit-scrollbar{
-  background-color: darkgray;
-} */
-
+input[type="date"] {
+  padding: 0.75rem 0.75rem;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: var(--text-white);
 }
